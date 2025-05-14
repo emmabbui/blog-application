@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Emma Bui, Assignment 13 -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            font-size: 100%;
+            background-color: floralwhite;
+            padding: 20px;            
+        }
+
+        h1 {
+            font-size: 1.8em;
+        }
+
+
+        .flexcontainer {
+            width: 350px;
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 25px;
+        }
+
+        .flexcontainer label {
+            width: 100px;
+        }
+        
+        [type=text],  [type=password] {
+            width: 280px;
+        }
+        
+
+        [type=submit],
+        [type=reset] {
+            margin-top: 25px;
+            padding: 10px;
+            border: none;
+            background-color: #ccc;
+            width: 150px;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        form {
+            border-top: 1px solid #000;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+        <header>
+            <h1>Login to Access Our Blog</h1>
+        </header>
+
+
+        <form action="login.php" method="post">
+
+            <div class="flexcontainer">
+                <label for="username">User name: </label>
+                <input type="text" id="username" name="username" placeholder="username" maxlength="10" required>
+            </div>
+
+            <div class="flexcontainer">
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" placeholder="password" maxlength="10" required>
+            </div>
+
+
+            <input type="submit" value="Login">
+
+            <input type="reset" value="Clear">
+            
+        </form>
+
+</body>
+</html>
